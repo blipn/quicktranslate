@@ -1,0 +1,7 @@
+<script type="text/javascript">
+  // redirects to browser language translated webpage (url from query params)
+    const urlParams = new URLSearchParams(window.location.search)
+    const url = urlParams.get('url')
+    const src = `https://translate.google.com/translate?hl=&sl=fr&tl=${navigator.language}&u=${url}`
+    window.location.replace(src)
+</script>
